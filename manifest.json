@@ -1,0 +1,23 @@
+{
+
+	"manifest_version": 2,
+	"name": "Nopepad",
+	"version": "1.0",
+
+	"description": "placeholder",
+	"homepage_url": "placeholder",
+	"iconds": {
+		"48": "placeholder"
+	},
+
+	"permissions": [
+		"activeTab"
+	],
+
+	"browser_action": {
+		"default_icon": "icons/placeholder",
+		"default_title": "Nopepad",
+		"default_popup": "popup/nopepad.html"
+	},
+
+}
