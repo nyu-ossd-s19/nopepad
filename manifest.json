@@ -11,7 +11,8 @@
 	},
 
 	"permissions": [
-		"activeTab"
+		// "activeTab"
+		"*://developer.mozilla.org/*"
 	],
 
 	"browser_action": {

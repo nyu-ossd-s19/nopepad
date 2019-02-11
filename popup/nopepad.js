@@ -1,12 +1,39 @@
-var f = "note.txt"
+console.log(window.document.readyState);
 
-writeToFile(f, document.getElementByName("note"))
+
+// if (typeof window == 'undefined' || null) {
+//       // do stuffc
+//       console.log("fuck me");
+// }else if{
+// 	console.log("its alive");
+// }
+window.onload = function() {
+	
+	var f = "note.txt";
+	if (window.localStorage.getItem('notepad') != "" || undefined || null){
+		document.getElementById("notepad").value = window.localStorage.getItem('notepad');
+	}
+	document.getElementById("noteInfo").addEventListener("submit", function(e) {
+		// console.log(document.getElementById("notepad").value);
+		let data = document.getElementById("notepad").value;
+		e.preventDefault();
+		window.localStorage.setItem('notepad', data);
+		console.log(window.localStorage.getItem('notepad'));
+
+	});
+	// document.getElementById("notepad");
+}
+
+// document.getElementById("notepad").addEventListener("submit", console.log("he"));
+// writeToFile(f, document.getElementByName("note"))
 
 function writeToFile(f, output){
+	// console.log("hi");
 	var file = f;
-	txtFile.write(output);
-	txtFile.close();
+	file.write(output);
+	file.close();
 }
+
 
 /**
  *  * There was an error executing the script.
