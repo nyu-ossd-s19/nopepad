@@ -6,7 +6,7 @@
 
 	"description": "placeholder",
 	"homepage_url": "https://github.com/nyu-ossd-s19/nopepad",
-	"iconds": {
+	"icons": {
 		"48": "pad.png"
 	},
 
