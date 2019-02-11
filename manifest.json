@@ -5,9 +5,9 @@
 	"version": "1.0",
 
 	"description": "placeholder",
-	"homepage_url": "placeholder",
+	"homepage_url": "https://github.com/nyu-ossd-s19/nopepad",
 	"iconds": {
-		"48": "placeholder"
+		"48": "pad.png"
 	},
 
 	"permissions": [
@@ -15,7 +15,7 @@
 	],
 
 	"browser_action": {
-		"default_icon": "icons/placeholder",
+		"default_icon": "icons/pad.png",
 		"default_title": "Nopepad",
 		"default_popup": "popup/nopepad.html"
 	}
