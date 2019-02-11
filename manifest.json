@@ -18,6 +18,6 @@
 		"default_icon": "icons/placeholder",
 		"default_title": "Nopepad",
 		"default_popup": "popup/nopepad.html"
-	},
+	}
 
 }
