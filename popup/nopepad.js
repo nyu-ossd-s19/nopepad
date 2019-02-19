@@ -8,6 +8,7 @@ console.log(window.document.readyState);
 // 	console.log("its alive");
 // }
 window.onload = function() {
+	console.log("hey")
 	
 	var f = "note.txt";
 	if (window.localStorage.getItem('notepad') != "" || undefined || null){
@@ -19,9 +20,15 @@ window.onload = function() {
 		e.preventDefault();
 		window.localStorage.setItem('notepad', data);
 		console.log(window.localStorage.getItem('notepad'));
-
 	});
-	// document.getElementById("notepad");
+
+	// Save data on every keypress
+	let notepad = document.getElementById("notepad")
+	notepad.onkeyup = function(a) {
+		let data = notepad.value;
+		window.localStorage.setItem('notepad', data);
+	}
+
 }
 
 // document.getElementById("notepad").addEventListener("submit", console.log("he"));
